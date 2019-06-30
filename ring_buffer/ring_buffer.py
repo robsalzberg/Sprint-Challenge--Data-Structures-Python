@@ -20,4 +20,11 @@ class RingBuffer:
             self.current += 1
 
     def get(self):
-      pass
+        # initialize empty array
+        arr = []
+        # iterate through array
+        for item in self.storage:
+        # if item is not none
+            if item != None:
+                arr.append(item)
+        return arr
